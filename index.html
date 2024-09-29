@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fluid-container">
+        <div class="bg-container">
+        <div class="row">
+            <!-- Home Page -->
+            <div class  ="col-12" id = "homePage">
+                <div class = "card d-flex flex-row justify-content-center">
+                    <div class = "d-none d-md-block col-md-6">
+                        <img class = "left-image" src = "burger.jpg"/>
+                    </div>
+                    <!------------- right container------------->
+                    <div class="right-card d-flex flex-column justify-content-center">
+                        <h1 class = "right-header">Flavor Palette</h1>
+                        <p class = "right-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum amet sequi error animi repellat. Quidem, aspernatur quae aliquid in impedit distinctio nisi harum qui eius, aliquam temporibus aut magnam ducimus?</p>
+                        <div class = "d-flex flex-row justify-content-center">
+                            <i class="fa-brands fa-google pl-3 uni-icons"></i>
+                            <i class="fa-brands fa-facebook pl-3 uni-icons"></i>
+                            <i class="fa-brands fa-linkedin pl-3 uni-icons"></i>
+                            <i class="fa-brands fa-twitter pl-3 uni-icons"></i>
+                        </div>
+                        <div class = "login">
+                            <p class = "text">Please Login or Signup to continue</p>
+                            <button id = "homePgLoginBtn" class = "login-btn">Login</button>
+                            <button id = "homePgSignUpBtn" class = "signup-btn">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SignUp Form -->
+             <div class = "col-12">
+                <div id = "signUpForm" class="form-img-container d-none">
+                    <div class = "d-none d-md-block">
+                        <img src="https://img.freepik.com/premium-vector/illustration-sign-up-log-wireframe-idea-showcasing-various-ui-elements_1278800-10909.jpg?w=900" class="signUp-img" />
+                    </div>
+                    <div class="form-container">
+                        <form id = "signUpFormEl">
+                            <div class="header">
+                                <h1>Create Account</h1>
+                            </div>
+                            <div class="username-container">
+                                <input type="text" placeholder="Enter Your name" class="userId" id = "signUpInputName" />
+                                <i class="fa-solid fa-user userId-icon"></i>
+                            </div>
+                            <small id = "signUpInputNamePara"></small>
+                            <div class="username-container">
+                                <input type="email" placeholder="Enter Your emailID" class="userId" id = "signUpInputUsername" />
+                                <i class="fa-solid fa-user userId-icon"></i>
+                            </div>
+                            <small id = "signUpInputUserIdPara"></small>
+                            <div class="password-container">
+                                <input type="password" placeholder="Enter password" class="userPass" id = "signUpInputPassword" />
+                                <i class="fa-solid fa-lock userPass-icon"></i>
+                            </div>
+                            <small id = "signUpPassPara"></small>
+                            <div class="RememberMe-forgotPass-container">
+                                <div>
+                                    <input type="checkbox" class="check-box" id="RememberMeCheck" />
+                                    <label for="RememberMeCheck" class="RememberMe">Remember me</label>
+                                </div>
+                            </div>
+                            <div>
+                                <button id = "regiterBtn" type="submit" class="submitBtn">Register</button>
+                            </div>
+                            <div class = "d-flex flex-row justify-content-center">
+                                <p class="dont-have-acc">Already Have an Account <span id = "convertToSignUp">SignIn</span></p>
+                            </div>
+                            <p class="joinWith-text">Or you can join with</p>
+                            <div class="form-icons-container">
+                                <i class="fa-brands fa-google form-icons"></i>
+                                <i class="fa-brands fa-facebook-f form-icons"></i>
+                                <i class="fa-brands fa-twitter form-icons"></i>
+                                <i class="fa-brands fa-linkedin-in form-icons"></i>
+                            </div>
+                        </form>
+                        <div>
+                            <button id = "signUpBackBtn" class = "back-Btn">Back</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+
+
+            <!-- SignIn form -->
+             <div class = "col-12">
+                <div id = "signInForm" class="form-img-container d-none">
+                    <div class = "d-none d-md-block">
+                        <img src="https://img.freepik.com/premium-vector/illustration-sign-up-log-wireframe-idea-showcasing-various-ui-elements_1278800-10909.jpg?w=900" class="signUp-img" />
+                    </div>
+                    <div class="form-container">
+                        <form id = "signInFormEl">
+                            <div class="header">
+                                <h1>Welcome Back</h1>
+                            </div>
+                            <div class="username-container">
+                                <input type="email" placeholder="Enter Your emailID" class="userId" id = "signInInputUsername" />
+                                <i class="fa-solid fa-user userId-icon"></i>
+                            </div>
+                            <small id = "signInUsernamePara"></small>
+                            <div class="password-container">
+                                <input type="password" placeholder="Enter Your password" class="userPass" id = "signInPassword" />
+                                <i class="fa-solid fa-lock userPass-icon"></i>
+                            </div>
+                            <small id = "signInPassPara"></small>
+                            <div class="RememberMe-forgotPass-container">
+                                <div>
+                                    <input type="checkbox" class="check-box" id="RememberMeCheckBox" />
+                                    <label for="RememberMeCheckBox" class="RememberMe">Remember me</label>
+                                </div>
+                                <p class="forgotpass">Forgot Password?</p>
+                            </div>
+                            <div>
+                                <button id = "submitBtn" type="submit" class="submitBtn">Submit</button>
+                            </div>
+                            <div>
+                                <p class="dont-have-acc">Don't Have an Account <span id = "convertToSignIn">SignUp</span></p>
+                            </div>
+                            <p class="joinWith-text">Or you can join with</p>
+                            <div class="form-icons-container">
+                                <i class="fa-brands fa-google form-icons"></i>
+                                <i class="fa-brands fa-facebook-f form-icons"></i>
+                                <i class="fa-brands fa-twitter form-icons"></i>
+                                <i class="fa-brands fa-linkedin-in form-icons"></i>
+                            </div>
+                        </form>
+                        <div>
+                            <button id = "signInBackBtn" class = "back-Btn">Back</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+             <!-- Result Page -->
+
+             <div class = "col-12">
+                <div class = "result-page-card d-none" id = "resultPage">
+                    <img src = "result-failed.png" class = "result-page-img" id = "resultImg" />
+                    <h1 id = "resultHeading" class = "result-page-heading">You Don't Have an acoount, Please Register.</h1>
+                    <div>
+                        <button class= "submitBtn" id = "resultPageRegisterBtn" >Register</button>
+                    </div>
+                    <div id = "resultPageIcon" class = "d-none result-page-icon-container" >
+                        <i class="fa-solid fa-check result-page-icon"></i>
+                    </div>
+                </div>
+             </div>
+             
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
